@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spam-eggs"
+version = "2020.0.0"
+dependencies = [
+  "httpx",
+  "gidgethub[httpx]>4.0.0",
+  "django>2.1; os_name != 'nt'",
+  "django>2.0; os_name == 'nt'",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "drwadu", email = "alamzan94@live.de"},
+]
+maintainers = [
+  {name = "drwadu", email = "alamzan94@live.de"},
+]
+description = "fasb - faceted answer set browse"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/drwadu/fasb"
